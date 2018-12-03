@@ -1,0 +1,22 @@
+server:
+  port: 8041
+  tomcat:
+    uri-encoding: UTF-8
+dubbo:
+  application:
+    name: dubbo-consumer
+  registry:
+    address: zookeeper://39.108.159.40:2181
+  protocol:
+    name: dubbo
+    port: 20880
+  scan:
+    base-packages: com.tao.BootDubboControl
+  consumer:
+    timeout: 60000
+spring:
+  #devtools:
+    #restart:
+      #enabled: true
+  application:
+    name: dubbo-consumer
